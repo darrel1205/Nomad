@@ -1,0 +1,404 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="about.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar" id="author">
+        <div class="nav-container">
+            <a class="nav-logo">
+                <img src="img/logo.png" alt="Logo">
+            </a>
+            
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            
+            <div class="nav-links">
+                <a href="#">&lt;</a>
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="trends.html">KNOW ME WELL</a>
+                <a href="personality.html">PERSONALITY TYPES</a>
+            </div>
+        </div>
+    </nav>
+    <main id="author fade-in">
+        <div class="author">
+            <h1>Nomad</h1>
+        </div>
+        <div class="pauthor">
+        <p>I'm Charles Darrel B. Nicart, 19 years old, <br>a 2nd year college student at Technological University <br>of the Philippines. I'm taking the course of <br>Bachelor of Technical-Vocational Teacher Education major in<br> Computer Programming, and this is Webpage activity for PROG4 </p>
+        </div>
+    </main>
+    <section class="category fade-in">
+        <h1>Get to know me</h1>
+        <a href="#author" class="box1">
+            <Div class="blackhover"></Div>
+            <h3>Author</h3>
+        </a>
+        <a href="#exp" class="box1">
+            <Div class="blackhover"></Div>
+            <h3>Work Experience</h3>
+        </a>
+        <a href="#school" class="box1">
+            <Div class="blackhover"></Div>
+            <h3>School</h3>
+        </a>
+        <a href="#goals" class="box1">
+            <Div class="blackhover"></Div>
+            <h3>Goals</h3>
+        </a>
+        <a href="#portfolio" class="box1">
+            <Div class="blackhover"></Div>
+            <h3>Hobbies</h3>
+        </a>
+        <a href="#pets" class="box1">
+            <Div class="blackhover"></Div>
+            <h3>Pets</h3>
+        </a>
+        <a href="#motto" class="box1">
+            <Div class="blackhover"></Div>
+            <h3>Motto</h3>
+        </a>
+    </section>
+    <section class="showcase fade-in" id="exp">
+        <div class="container-fluid p-0">
+            <div class="row g-0">
+                <div class="col-lg-6 order-lg-2 text-white showcase-img mcdop-bg"></div>
+                <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                    <h2>Experience</h2>
+                    <p class="lead mb-0">I worked as a crew at Mc Donalds Anabu for half a year, but I recently resigned this late February</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="showcase2 fade-in" id="school">
+        <div class="row g-0">
+            <div class="col-lg-6 text-white showcase-img school-bg"></div>
+            <div class="col-lg-6 my-auto showcase-text">
+                <h2>School</h2>
+                <p class="lead mb-0">I graduated senior highschool at Maranatha Christian Academy of Imus and is now currently a 2nd year college student in Technical University of the Philippines - Cavite. I'm taking Bachelor of Technical-Vocational Teached Education major in Computer Programming</p>
+            </div>
+        </div>
+    </section>
+    <section class="showcase3 fade-in" id="goals">
+        <div class="container-fluid p-0">
+            <div class="row g-0">
+                <div class="col-lg-6 order-lg-2 text-white showcase-img goals-bg"></div>
+                <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                    <h2>Goals</h2>
+                    <ul class="lead mb-0">
+                        <li>Graduate</li>
+                        <li>Get a good job</li>
+                        <li>Travel</li>
+                        <li>Be rich</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="page-section bg-black fade-in" id="portfolio">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Hobbies</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="img/cleaning.jpg" alt="Basketball" />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Household chores</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="img/yar.jpg" alt="Basketball" />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Billiards</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="img/anime.webp" alt="Watching anime/movies" />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Watching anime/movie</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="img/solo.jpg" alt="Read" />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Reading manhwa/manga</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="img/guitar.jfif" alt="Plat" />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Guitar</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="img/basketball.avif" alt="Basketball" />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Basketball</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabpersonality="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="img/close-icon.svg" alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">Household chores</h2>
+                                <img class="img-fluid d-block mx-auto" src="img/cleaning.jpg" alt="..." />
+                                <p>Growing up my parents taught me how to do chores. I like cleaning so it just became a hobby for me</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabpersonality="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="img/close-icon.svg" alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">Billiards</h2>
+                                <img class="img-fluid d-block mx-auto" src="img/yar.jpg" alt="..." />
+                                <p>Billards is a fun hobby of mine to pass time during our breaks here at TUP Cavite</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabpersonality="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="img/close-icon.svg" alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">Watching anime/movie</h2>
+                                <img class="img-fluid d-block mx-auto" src="img/anime.jpg" alt="..." />
+                                <p>Watching anime and movies became my hobby unknowingly. They make me feel different emotions that I just got hooked on it</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabpersonality="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="img/close-icon.svg" alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">Reading manga/manhwa</h2>
+                                <img class="img-fluid d-block mx-auto" src="img/manhwa.jpg" alt="..." />
+                                <p>Same as watching a movie, I love reading great stories. I got really into it during pandemic</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabpersonality="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="img/close-icon.svg" alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">Playing Guitar</h2>
+                                <img class="img-fluid d-block mx-auto" src="img/guitar.jfif" alt="..." />
+                                <p>Playing guitar is an old hobby of mine. Me and my friends used to jam outside my house everynight. So although I don't play much this day I still love playing guitar</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabpersonality="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="img/close-icon.svg" alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">Basketball</h2>
+                                <img class="img-fluid d-block mx-auto" src="img/basketball.avif" alt="Basketball" />
+                                <p>I used to play basketball everyday. it is my favorite sport even tho I haven't been able to play much after pandemic</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="mypets fade-in" id="pets">
+        <h1>Pets</h1>
+        <div class="grid-container">
+            <div class="pets">
+                <img class='grid-item grid-item-1' src="img/yuqi.jpg" alt=''>
+                <p>"yuki"</p>
+            </div>
+            <div class="pets">
+                <img class='grid-item grid-item-2' src="img/smog.jpg" alt=''>
+                <p>"smog"</p>
+            </div>
+            <div class="pets">
+                <img class='grid-item grid-item-3' src="img/kira.jfif" alt=''>
+                <p>"kira"</p>
+            </div>
+            <div class="pets">
+                <img class='grid-item grid-item-4' src="img/sleep.jpg" alt=''>
+                <p>"sleeping smog"</p>
+            </div>
+            <div class="pets">
+                <img class='grid-item grid-item-5' src="img/russia.jpg" alt=''>
+                <p>"russia"</p>
+            </div>
+            <div class="pets">
+                <img class='grid-item grid-item-6' src="img/jr.jpg" alt=''>
+                <p>"kira jr."</p>
+            </div>
+            <div class="pets">
+                <img class='grid-item grid-item-7' src="img/fam.jpg" alt=''>
+                <p>"Smog & kittens"</p>
+            </div>
+            <div class="pets">
+                <img class='grid-item grid-item-8' src="img/panda.jpg" alt=''>
+                <p>"Panda"</p>
+            </div>
+            <div class="pets">
+                <img class='grid-item grid-item-9' src="img/children.jpg" alt=''>
+                <p>"we bare cats"</p>
+            </div>
+            <div class="pets">
+                <img class='grid-item grid-item-10' src="img/haha.jpg" alt=''>
+                <p>"goodmorning"</p>
+            </div>
+        </div>
+    </section>
+    <section class="showcase3 fade-in" id="motto">
+        <div class="row g-0">
+            <div class="col-lg-6 text-white showcase-img spike-bg"></div>
+            <div class="col-lg-6 my-auto showcase-text">
+                <h2>Motto in life</h2>
+                <p class="mottop">"Whatever happens, happens"</p>
+                <p>- Spike Spiegel</p>
+            </div>
+        </div>
+    </section>
+    <div class="reference-trigger fade-in">
+        <button onclick="toggleReferenceModal()">Click here to see references (APA Style)</button>
+    </div>
+    <div id="referenceModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="toggleReferenceModal()">&times;</span>
+            <h3>References (APA Style)</h3>
+            <div class="apa-references">
+                <p><i>Dani Krossing. (2022, December 11). 1 | INTRODUCTION TO HTML & CSS | 2023 | Learn HTML and CSS Full Course for Beginners. YouTube. https://www.youtube.com/watch?v=v8jDnBYc0bs&list=PL0eyrZgxdwhwP0AxnbBiDBCi53LK9uCMZ</i></p>
+                <p><i>Agency - One Page Bootstrap Theme. (n.d.). Start Bootstrap. https://startbootstrap.com/theme/agency</i></p>
+                <p>Old project of mine:</p>
+                <img src="img/aboutref.jpg" alt="Logo">
+                <img src="img/aboutref2.jpg" alt="Logo">
+                <img src="img/aboutref3.jpg" alt="Logo">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content fade-in">
+            <div class="footer-logo">
+                <img src="img/logo.png" alt="Logo">
+                <span>omad</span>
+            </div>
+            <div class="social-media">
+                <span>Follow me</span>
+                <a href="https://www.facebook.com/charles.nicart.9/" target="_blank"><img src="img/fb-white.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/nicartdarrel/" target="_blank"><img src="img/ig-white.png" alt="Instagram"></a>
+            </div>
+        </div>
+        <div class="quote">
+            <p>"There are many types of monsters that scare me: Monsters who cause trouble without showing themselves, monsters who abduct children, monsters who devour dreams, monsters who suck blood... and then, monsters who tell nothing but lies. Lying monsters are a real nuisance: They are much more cunning than others. They pose as humans even though they have no understanding of the human heart; they eat even though they’ve never experienced hunger; they study even though they have no interest in academics; they seek friendship even though they do not know how to love. If I were to encounter such monsters, I would likely be eaten by them... because in truth, I am that monster." - L</p>
+        </div>
+        <div class="footer-links">
+            <a href="index.html">Home</a> | 
+            <a href="about.html">About</a> | 
+            <a href="trends.html">Know me well</a> |
+            <a href="personality.html">Personality types</a>
+        </div>
+        <div class="copyright">
+            © 2025 - 2030 Nomad | All Rights Reserved
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
